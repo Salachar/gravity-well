@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Gravity Well</title>
+		<link rel="stylesheet" href="src/css/styles.css"></link>
+	</head>
+
+	<body>
+		<div id="main-menu" class="menu canvas-width-modifier">
+			<div id="num-objects">
+				Num Objects: <span id="num_objects_counter"></span>
+			</div>
+			<div id="fps">
+				FPS: <span id="fps_counter"></span>
+			</div>
+
+			<div>
+				<label for="well-object">Gravity Well</label>
+				<input type="radio" name="object" id="well-object"/>
+			</div>
+			<div>
+				<label for="projectile-object">Object</label>
+				<input type="radio" name="object" id="projectile-object" checked/>
+			</div>
+			<div>
+				<label for="planet-object">Planet</label>
+				<input type="radio" name="object" id="planet-object"/>
+			</div>
+
+			<div>
+				<label for="confine_projectiles">Bound area?</label>
+				<input id="confine_projectiles" type="checkbox"/>
+			</div>
+
+				<button id="reset-button">Reset</button>
+			</div>
+		</div>
+
+		<div id="canvas_container">
+			<canvas id="control_canvas"></canvas>
+			<canvas id="front_canvas"></canvas>
+			<canvas id="middle_canvas"></canvas>
+			<canvas id="back_canvas"></canvas>
+		</div>
+
+		<script src="base.js"></script>
+	</body>
+<html>
